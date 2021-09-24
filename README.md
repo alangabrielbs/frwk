@@ -1,63 +1,27 @@
+# Framework teste
 
-
-This is a [Next.js](https://nextjs.org/) boilerplate created following the  [React Avançado](https://reactavancado.com.br/) course.
-
-## What is inside?
-
-This project uses lot of stuff as:
-
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
-
-## Getting Started
-
-Create a new project using this boilerplate as an example:
-
-```bash
-yarn create next-app -e https://github.com/alangabrielbs/boilerplate-next
+Escopo do desafio:
 ```
+Construa uma aplicação Web que irá utilizar as listagens de uma API Rest.
 
-First, run the development server:
+Esta aplicação deve conter os menus e/ou páginas:
+POSTAGENS
+ALBUNS
+TO-DOs
 
-```bash
-npm run dev
-# or
-yarn dev
+A API a ser utilizada está publicada em https://jsonplaceholder.typicode.com/
+
+Utilizar React para desenvolver a aplicação.
 ```
+<sub>** Não foi disponibilizado layout, contudo, imagino que não será avaliado a capacidade de criação de layout.<sup>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+## Como será desenvolvido?
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+O processo de desenvolvimento vai ser dividido em três etapas:
 
-## Commands
+  1. Criação do layout
+  2. Divisão do layout em tarefas
+  3. Desenvolvimento front-end
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Utilizarei esse [Notion](https://handsome-prose-260.notion.site/b19eb4aace5e42b4afc4aec2cfb04734?v=c8ef36f9b4064a09981772f14a7ca867) para organizar de forma visual as tarefas
