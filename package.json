@@ -24,17 +24,21 @@
     ]
   },
   "dependencies": {
-    "next": "10.0.1",
+    "next": "11.1.2",
     "next-pwa": "^3.1.5",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "styled-components": "^5.2.1"
+    "next-seo": "^4.28.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sharp": "^0.29.1",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/core": "^7.14.8",
     "@babel/preset-typescript": "^7.12.1",
-    "@storybook/addon-essentials": "^6.0.28",
-    "@storybook/react": "^6.0.28",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/builder-webpack5": "^6.3.8",
+    "@storybook/manager-webpack5": "^6.3.8",
+    "@storybook/react": "^6.3.8",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
     "@types/jest": "^26.0.15",
@@ -56,6 +60,8 @@
     "lint-staged": "^10.5.1",
     "prettier": "^2.1.2",
     "react-is": "^17.0.1",
-    "typescript": "^4.0.5"
+    "storybook-addon-next-router": "^3.0.8",
+    "typescript": "^4.0.5",
+    "webpack": "^5.54.0"
   }
 }

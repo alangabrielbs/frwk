@@ -1,28 +1,18 @@
+import { DefaultSeo } from 'next-seo'
 import type { AppProps } from 'next/app'
-import Head from 'next/head'
+import { ThemeProvider } from 'styled-components'
 
-import GlobalStyles from 'styles/GlobalStyles'
+import GlobalStyles from 'styles/global'
+import theme from 'styles/theme'
+import { SEO } from '../../next-seo.config'
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Head>
-        <title>React - Boilerplate</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        ></meta>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
-        <meta
-          name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
-        />
-        <link rel="manifest" href="/manifest.json" />
-      </Head>
+    <ThemeProvider theme={theme}>
+      <DefaultSeo {...SEO} />
       <GlobalStyles />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }
 

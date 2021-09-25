@@ -37,7 +37,20 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
-        <Head />
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+            rel="stylesheet"
+          />
+
+          <meta name="theme-color" content="#807CE8" />
+        </Head>
         <body>
           <Main />
           <NextScript />
