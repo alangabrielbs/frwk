@@ -9,7 +9,7 @@ const wrapperModifiers = {
   medium: (theme: DefaultTheme) => css`
     height: 4.5rem;
     font-size: ${theme.font.content.regular};
-    font-weight: ${theme.font.weights.medium};
+    font-weight: ${theme.font.weight.medium};
     line-height: ${theme.font.content.xxlarge};
     padding: ${theme.spacings.xxsmall} ${theme.spacings.small};
   `,

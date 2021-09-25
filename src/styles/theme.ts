@@ -9,7 +9,7 @@ export default {
   font: {
     family:
       "Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-    weights: {
+    weight: {
       regular: 400,
       medium: 500,
       bold: 700
