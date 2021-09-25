@@ -29,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
       font-size: ${theme.font.content.regular};
+      background: ${theme.colors.backgroundDark};
     }
 
     button {

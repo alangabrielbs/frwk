@@ -5,7 +5,10 @@ module.exports = {
   core: {
     builder: 'webpack5'
   },
-  stories: ['../src/components/**/stories.tsx'],
+  stories: [
+    '../src/components/**/stories.tsx',
+    '../src/templates/**/stories.tsx'
+  ],
   addons: ['@storybook/addon-essentials', 'storybook-addon-next-router'],
   babel: async (options) => ({
     ...options,

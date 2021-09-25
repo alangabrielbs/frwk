@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero /> should render the heading 1`] = `
+.c0 {
+  width: 100%;
+  max-width: 67rem;
+  padding: 8.0rem 0;
+  background: #110D15;
+}
+
+.c1 {
+  font-weight: 700;
+  font-size: 4.0rem;
+  line-height: 5.2rem;
+  background-image: linear-gradient(110.3deg,#F85D92 8.1%,#6B81FA 91.09%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.c2 {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  margin-top: 1.6rem;
+  color: #A8A8B3;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 7.2rem;
+    line-height: 8.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    margin-top: 2.4rem;
+  }
+}
+
+<section
+  class="c0"
+>
+  <h1
+    class="c1"
+  >
+    Thoughts, Notes & Tutorials
+  </h1>
+  <p
+    class="c2"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra hendrerit placerat. Nunc dictum nunc fermentum leo blandit porta.
+  </p>
+</section>
+`

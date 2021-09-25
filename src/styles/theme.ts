@@ -1,7 +1,8 @@
 export default {
+  navBarHeight: '6.5rem',
   grid: {
-    container: '130rem',
-    gutter: '3.2rem'
+    container: '110rem',
+    gutter: '2.4rem'
   },
   border: {
     radius: '0.4rem'

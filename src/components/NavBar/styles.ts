@@ -8,7 +8,8 @@ export const Wrapper = styled.header`
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(42px);
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
     border-bottom: 1px solid ${theme.colors.neutral13};
   `}
 `
@@ -16,7 +17,7 @@ export const Wrapper = styled.header`
 export const MenuDesktop = styled.div`
   ${({ theme }) => css`
     width: 100%;
-    height: 6.5rem;
+    height: ${theme.navBarHeight};
     max-width: ${theme.grid.container};
     margin: 0 auto;
     padding: 0 ${theme.spacings.small};
@@ -61,8 +62,9 @@ export const MenuMobile = styled.nav<MobileMenuProps>`
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(42px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
     z-index: ${theme.layers.menu};
     transition: opacity ${theme.transition.default};
     opacity: ${isOpen ? 1 : 0};
