@@ -7,12 +7,6 @@ import * as S from './styles'
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const handleKeyPress = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.code === 'Space' || e.code === 'Enter') {
-      setIsOpen((prevState) => !prevState)
-    }
-  }
-
   return (
     <S.Wrapper>
       <S.MenuDesktop>
@@ -25,7 +19,6 @@ const NavBar = () => {
         <MediaMatch lessThan="medium">
           <S.IconWrapper
             onClick={() => setIsOpen((prevState) => !prevState)}
-            onKeyPress={(e) => handleKeyPress(e)}
             aria-label={isOpen ? 'Close menu' : 'Open Menu'}
             tabIndex={0}
           >

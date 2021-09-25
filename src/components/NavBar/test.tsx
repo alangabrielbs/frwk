@@ -1,5 +1,5 @@
 import userEvent from '@testing-library/user-event'
-import { render, screen, fireEvent } from 'utils/test-utils'
+import { render, screen } from 'utils/test-utils'
 
 import NavBar from '.'
 
@@ -28,41 +28,6 @@ describe('<NavBar />', () => {
 
       // clicar no botão de fechar o menu e verificar se ele fechou
       userEvent.click(screen.getByLabelText(/close menu/i))
-      expect(mobileMenu.getAttribute('aria-hidden')).toBe('true')
-      expect(mobileMenu).toHaveStyle({ opacity: 0 })
-    })
-
-    it('should open/close the mobile menu with keyboard', () => {
-      expect(mobileMenu.getAttribute('aria-hidden')).toBe('true')
-      expect(mobileMenu).toHaveStyle({ opacity: 0 })
-
-      fireEvent.keyPress(screen.getByLabelText(/open menu/i), {
-        key: 'Enter',
-        code: 'Enter',
-        charCode: 13
-      })
-      expect(mobileMenu.getAttribute('aria-hidden')).toBe('false')
-      expect(mobileMenu).toHaveStyle({ opacity: 1 })
-
-      fireEvent.keyPress(screen.getByLabelText(/close menu/i), {
-        key: '',
-        code: 'Space',
-        charCode: 32
-      })
-      expect(mobileMenu.getAttribute('aria-hidden')).toBe('true')
-      expect(mobileMenu).toHaveStyle({ opacity: 0 })
-    })
-
-    it('should do nothing if different key is pressed', () => {
-      expect(mobileMenu.getAttribute('aria-hidden')).toBe('true')
-      expect(mobileMenu).toHaveStyle({ opacity: 0 })
-
-      fireEvent.keyPress(screen.getByLabelText(/open menu/i), {
-        key: 'Tab',
-        code: 'Tab',
-        charCode: 9
-      })
-
       expect(mobileMenu.getAttribute('aria-hidden')).toBe('true')
       expect(mobileMenu).toHaveStyle({ opacity: 0 })
     })
