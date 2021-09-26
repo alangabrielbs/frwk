@@ -7,6 +7,8 @@ export const Wrapper = styled.section`
   ${({ theme }) => css`
     ${InputWrapper} {
       margin-bottom: ${theme.spacings.medium};
+      position: sticky;
+      top: calc(${theme.navBarHeight} + ${theme.spacings.xsmall});
     }
 
     ${media.greaterThan('medium')`

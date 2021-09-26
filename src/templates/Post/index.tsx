@@ -1,5 +1,6 @@
 import NavBar from 'components/NavBar'
 import Post, { PostProps } from 'components/Post'
+import { NextSeo } from 'next-seo'
 
 import * as S from './styles'
 
@@ -9,11 +10,32 @@ export type PostTemplateProps = {
 
 const PostTemplate = ({ post }: PostTemplateProps) => {
   return (
-    <S.Wrapper>
-      <NavBar />
+    <>
+      <NextSeo
+        title={`${post.title} - framewotk`}
+        description={post.body}
+        canonical="https://frwk.alangabriel.dev"
+        openGraph={{
+          url: 'https://frwk.alangabriel.dev',
+          title: 'framework',
+          description: post.body,
+          images: [
+            {
+              url: `https://thumbnail-poc.vercel.app/api/thumbnail.png?title=${post.title}&width=1280&height=720`,
+              width: 1280,
+              height: 720,
+              alt: 'framework'
+            }
+          ],
+          site_name: 'framework'
+        }}
+      />
+      <S.Wrapper>
+        <NavBar />
 
-      <Post {...post} />
-    </S.Wrapper>
+        <Post {...post} />
+      </S.Wrapper>
+    </>
   )
 }
 

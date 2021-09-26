@@ -7,6 +7,7 @@ export const Wrapper = styled.header`
     position: fixed;
     top: 0;
     left: 0;
+    z-index: ${theme.layers.menu};
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(2rem);
     -webkit-backdrop-filter: blur(2rem);
