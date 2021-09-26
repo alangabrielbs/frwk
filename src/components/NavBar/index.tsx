@@ -3,6 +3,7 @@ import Logo from 'components/Logo'
 import MediaMatch from 'components/MediaMatch'
 import Link from 'next/link'
 import * as S from './styles'
+import items from './items'
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -43,16 +44,11 @@ const NavBar = () => {
         <S.MenuMobileContent>
           <S.Label>Know other tools:</S.Label>
           <S.MenuGroup>
-            <Link href="#" passHref>
-              <S.MenuLink>
-                <span>📝</span> TODO List (coming soon)
-              </S.MenuLink>
-            </Link>
-            <Link href="#" passHref>
-              <S.MenuLink>
-                <span>🖼</span> Albuns (coming soon)
-              </S.MenuLink>
-            </Link>
+            {items.map(({ href, id, label }) => (
+              <Link href={href} passHref key={id}>
+                <S.MenuLink>{label}</S.MenuLink>
+              </Link>
+            ))}
           </S.MenuGroup>
         </S.MenuMobileContent>
       </S.MenuMobile>
