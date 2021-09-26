@@ -1,21 +1,18 @@
 import NavBar from 'components/NavBar'
-import Post from 'components/Post'
+import Post, { PostProps } from 'components/Post'
 
 import * as S from './styles'
 
 export type PostTemplateProps = {
-  userId: number
-  id: number
-  title: string
-  body: string
+  post: PostProps
 }
 
-const PostTemplate = (props: PostTemplateProps) => {
+const PostTemplate = ({ post }: PostTemplateProps) => {
   return (
     <S.Wrapper>
       <NavBar />
 
-      <Post {...props} />
+      <Post {...post} />
     </S.Wrapper>
   )
 }

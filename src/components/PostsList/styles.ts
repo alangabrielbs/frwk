@@ -33,3 +33,5 @@ export const SubTitle = styled.h4`
     }
   `}
 `
+
+export const Sentinel = styled.div``

@@ -1,6 +1,7 @@
 import { Container } from 'components/Container'
 import Link from 'next/link'
 import { ArrowLeft } from 'react-feather'
+import { UserProps } from 'services/user'
 
 import * as S from './styles'
 
@@ -9,9 +10,10 @@ export type PostProps = {
   id: number
   title: string
   body: string
+  user: UserProps
 }
 
-const Post = ({ userId, body, title }: PostProps) => (
+const Post = ({ userId, body, title, user }: PostProps) => (
   <S.Wrapper>
     <Container>
       <Link href="/">
@@ -23,7 +25,7 @@ const Post = ({ userId, body, title }: PostProps) => (
       <S.Header>
         <S.Title>{title}</S.Title>
         <S.WrapperInfo>
-          <S.Author>Alan Gabriel</S.Author>
+          <S.Author>{user.name}</S.Author>
           <S.Time>08 de maio de 2021</S.Time>
         </S.WrapperInfo>
       </S.Header>

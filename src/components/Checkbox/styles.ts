@@ -20,6 +20,7 @@ export const Input = styled.input`
     transition: background border ${theme.transition.fast};
     position: relative;
     outline: none;
+    flex-shrink: 0;
 
     &:before {
       content: '';

@@ -42,11 +42,13 @@ export default {
     mainDark: '#615DC2',
     secondary: '#F85D92',
 
-    primaryText: 'rgba(255, 255, 255, 0.9);',
+    primaryText: 'rgba(255, 255, 255, 0.9)',
     secondaryText: '#A8A8B3',
 
     disabled: 'rgba(0, 0, 0, 0.25)',
     divider: '#323238',
+
+    border: 'rgba(255, 255, 255, 0.29)',
 
     neutral1: '#FFFFFF',
     neutral2: '#FAFAFA',
