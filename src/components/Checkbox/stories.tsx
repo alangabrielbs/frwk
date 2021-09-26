@@ -1,13 +1,13 @@
 import { Story, Meta } from '@storybook/react'
 
-import InputCheck, { CheckboxProps } from '.'
+import Checkbox, { CheckboxProps } from '.'
 
 export default {
-  title: 'Components/InputCheck',
-  component: InputCheck
+  title: 'Components/Checkbox',
+  component: Checkbox
 } as Meta
 
-export const Default: Story<CheckboxProps> = (args) => <InputCheck {...args} />
+export const Default: Story<CheckboxProps> = (args) => <Checkbox {...args} />
 
 Default.args = {
   label: 'delectus aut autem',

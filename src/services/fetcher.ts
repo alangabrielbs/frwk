@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const url = process.env.NEXT_PUBLIC_API_URL || ''
+const url =
+  process.env.NEXT_PUBLIC_API_URL || 'https://jsonplaceholder.typicode.com'
 
 export const http = axios.create({
   baseURL: url,

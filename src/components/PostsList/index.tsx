@@ -28,7 +28,6 @@ const PostsList = ({ posts }: PostsListProps) => {
   })
 
   const populateNewPosts = async () => {
-    console.log('populateNewPosts')
     try {
       const newPosts = await getAllPosts(
         currentPage,
@@ -43,7 +42,6 @@ const PostsList = ({ posts }: PostsListProps) => {
   }
 
   const populatePostsSearch = async (searchValue = '') => {
-    console.log('populatePostsSearch')
     try {
       const newPosts = await getAllPosts(1, LIMIT_POSTS_PER_PAGE, searchValue)
 
@@ -60,13 +58,10 @@ const PostsList = ({ posts }: PostsListProps) => {
       populatePostsSearch(debouncedValue)
     }
 
-    console.log('searchValue', debouncedValue)
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedValue])
 
   useEffect(() => {
-    console.log('currentPage', currentPage)
     if (currentPage) populateNewPosts()
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
