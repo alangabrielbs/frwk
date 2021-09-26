@@ -43,14 +43,14 @@ const NavBar = () => {
         <S.MenuMobileContent>
           <S.Label>Know other tools:</S.Label>
           <S.MenuGroup>
-            <Link href="/" passHref>
+            <Link href="#" passHref>
               <S.MenuLink>
-                <span>📝</span> TODO List
+                <span>📝</span> TODO List (coming soon)
               </S.MenuLink>
             </Link>
-            <Link href="/" passHref>
+            <Link href="#" passHref>
               <S.MenuLink>
-                <span>🖼</span> Albuns
+                <span>🖼</span> Albuns (coming soon)
               </S.MenuLink>
             </Link>
           </S.MenuGroup>

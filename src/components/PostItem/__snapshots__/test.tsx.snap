@@ -50,10 +50,7 @@ exports[`<PostItem /> should render correctly 1`] = `
     <p
       class="c4"
     >
-      quia et suscipit
-suscipit recusandae consequuntur expedita et cum
-reprehenderit molestiae ut ut quas totam
-nostrum rerum est autem sunt rem eveniet architecto"
+      lorem in reprehenderit in voluptate velit esse quam nihil molestiae consequatur
     </p>
   </a>
 </article>

@@ -21,12 +21,6 @@ const GlobalStyles = createGlobalStyle`
       font-size: 62.5%;
     }
 
-    html,
-    body,
-    #__next {
-      height: 100%;
-    }
-
     body {
       font-size: ${theme.font.content.regular};
       background: ${theme.colors.backgroundDark};

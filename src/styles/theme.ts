@@ -55,7 +55,7 @@ export default {
     neutral5: '#D9D9D9',
     neutral6: '#BFBFBF',
     neutral7: '#8C8C8C',
-    neutral8: '#595959',
+    neutral8: '#646472',
     neutral9: '#434343',
     neutral10: '#262626',
     neutral11: '#1F1F1F',
