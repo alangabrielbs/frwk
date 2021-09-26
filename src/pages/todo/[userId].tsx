@@ -9,7 +9,7 @@ export default function Todo(props: TodosProps) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getAllTodos(0, 20)
+  const posts = await getAllTodos(0, 10)
 
   const paths = posts.map(({ id }) => ({
     params: { userId: String(id) }

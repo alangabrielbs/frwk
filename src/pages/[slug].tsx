@@ -12,7 +12,7 @@ export default function Post({ post }: PostTemplateProps) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getAllPosts(0, 20)
+  const posts = await getAllPosts(0, 10)
 
   const paths = posts.map(({ id }) => ({
     params: { slug: String(id) }

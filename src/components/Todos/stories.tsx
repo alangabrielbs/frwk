@@ -7,8 +7,7 @@ export default {
   title: 'Components/Todos',
   component: Todos,
   args: {
-    todos: mock,
-    name: 'Alan Gabriel'
+    ...mock
   }
 } as Meta
 
