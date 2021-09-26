@@ -8,10 +8,14 @@ export default {
 } as Meta
 
 export const Desktop: Story = () => (
-  <MediaMatch greaterThan="medium">Only on Desktop</MediaMatch>
+  <MediaMatch greaterThan="medium" style={{ color: '#fff' }}>
+    Only on Desktop
+  </MediaMatch>
 )
 export const Mobile: Story = () => (
-  <MediaMatch lessThan="medium">Only on Mobile</MediaMatch>
+  <MediaMatch lessThan="medium" style={{ color: '#fff' }}>
+    Only on Mobile
+  </MediaMatch>
 )
 
 Mobile.parameters = {
