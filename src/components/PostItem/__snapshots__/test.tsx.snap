@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostItem /> should render correctly 1`] = `
+.c1 {
+  padding-bottom: 3.2rem;
+  border-bottom: 1px solid #323238;
+}
+
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 + .c0 {
+  margin-top: 3.2rem;
+}
+
+.c1:hover .c2 {
+  background-image: linear-gradient(110.3deg,#F85D92 8.1%,#6B81FA 91.09%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.c3 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  color: #ffffff;
+}
+
+.c4 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: 0.8rem;
+  color: #A8A8B3;
+}
+
+<article
+  class="c0 c1"
+>
+  <a
+    href="/1"
+  >
+    <h1
+      class="c2 c3"
+    >
+      sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+    </h1>
+    <p
+      class="c4"
+    >
+      quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto"
+    </p>
+  </a>
+</article>
+`
