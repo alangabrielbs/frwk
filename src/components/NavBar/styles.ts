@@ -56,9 +56,9 @@ type MobileMenuProps = {
 
 export const MenuMobile = styled.nav<MobileMenuProps>`
   ${({ theme, isOpen }) => css`
-    height: calc(100vh - 6.5rem);
+    height: calc(100vh - ${theme.navBarHeight});
     position: fixed;
-    top: 6.5rem;
+    top: ${theme.navBarHeight};
     right: 0;
     bottom: 0;
     left: 0;

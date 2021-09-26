@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Logo from 'components/Logo'
 import MediaMatch from 'components/MediaMatch'
 import Link from 'next/link'
@@ -6,6 +6,14 @@ import * as S from './styles'
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : 'unset'
+
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
 
   return (
     <S.Wrapper>
