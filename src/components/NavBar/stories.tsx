@@ -14,11 +14,3 @@ export default {
 } as Meta
 
 export const Desktop: Story = (args) => <NavBar {...args} />
-
-export const Mobile: Story = (args) => <NavBar {...args} />
-
-Mobile.parameters = {
-  viewport: {
-    defaultViewport: 'mobile'
-  }
-}
