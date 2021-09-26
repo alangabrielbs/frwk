@@ -1,3 +1,5 @@
+import { PostItemProps } from 'components/PostItem'
+
 export default [
   {
     userId: 1,
@@ -35,4 +37,4 @@ export default [
     description:
       'repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque'
   }
-]
+] as PostItemProps[]

@@ -11,7 +11,8 @@
     "test:watch": "yarn test --watch",
     "storybook": "start-storybook -s ./public -p 6006 --no-dll",
     "build-storybook": "build-storybook -s ./public --no-dll",
-    "generate": "yarn plop --plopfile generators/plopfile.js"
+    "generate": "yarn plop --plopfile generators/plopfile.js",
+    "typecheck": "tsc --noEmit"
   },
   "husky": {
     "hooks": {

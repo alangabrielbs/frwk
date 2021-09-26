@@ -6,8 +6,17 @@ import mock from './mock'
 
 export default {
   title: 'Components/PostItem',
-  component: PostItem
+  component: PostItem,
+  args: {
+    ...mock
+  }
 } as Meta
+
+export const Desktop: Story<PostItemProps> = (args) => (
+  <Container style={{ marginTop: 40 }}>
+    <PostItem {...args} />
+  </Container>
+)
 
 export const Mobile: Story<PostItemProps> = (args) => (
   <Container style={{ marginTop: 40 }}>
@@ -21,5 +30,3 @@ Mobile.parameters = {
     defaultViewport: 'mobile'
   }
 }
-
-Mobile.args = mock
