@@ -73,5 +73,20 @@ export const Content = styled.p`
     line-height: 3rem;
     color: rgba(255, 255, 255, 0.9);
     margin-top: ${theme.spacings.xlarge};
+
+    & + & {
+      margin-top: ${theme.spacings.xsmall};
+    }
+  `}
+`
+
+export const LinkTODO = styled.a`
+  ${({ theme }) => css`
+    font-size: ${theme.font.content.large};
+    text-decoration: underline;
+    display: inline-block;
+    cursor: pointer;
+    color: ${theme.colors.secondaryText};
+    margin-top: ${theme.spacings.medium};
   `}
 `

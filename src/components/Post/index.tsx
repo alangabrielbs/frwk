@@ -11,7 +11,7 @@ export type PostProps = {
   body: string
 }
 
-const Post = ({ body, title }: PostProps) => (
+const Post = ({ userId, body, title }: PostProps) => (
   <S.Wrapper>
     <Container>
       <Link href="/">
@@ -32,6 +32,12 @@ const Post = ({ body, title }: PostProps) => (
     <S.Divider />
 
     <Container>
+      <Link href={`/todo/${userId}`}>
+        <S.LinkTODO>
+          <span>📝</span> Access author&apos;s to-do list
+        </S.LinkTODO>
+      </Link>
+
       <S.Content>{body}</S.Content>
       <S.Content>{body}</S.Content>
       <S.Content>{body}</S.Content>
