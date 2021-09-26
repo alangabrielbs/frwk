@@ -16,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
         color={theme.colors.gradients.primary}
         startPosition={0.3}
         stopDelayMs={200}
-        height={1}
+        height={2}
       />
       <Component {...pageProps} />
     </ThemeProvider>

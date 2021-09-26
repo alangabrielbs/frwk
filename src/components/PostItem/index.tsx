@@ -11,7 +11,7 @@ export type PostItemProps = {
 
 const PostItem = ({ body, id, title }: PostItemProps) => (
   <S.Wrapper>
-    <Link href={String(id)}>
+    <Link href={`/${id}`}>
       <a>
         <S.Title>{title}</S.Title>
         <S.Description>{body}</S.Description>

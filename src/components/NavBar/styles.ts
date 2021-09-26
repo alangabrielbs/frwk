@@ -62,13 +62,12 @@ export const MenuMobile = styled.nav<MobileMenuProps>`
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2rem);
-    -webkit-backdrop-filter: blur(2rem);
     z-index: ${theme.layers.menu};
     transition: opacity ${theme.transition.default};
     opacity: ${isOpen ? 1 : 0};
     pointer-events: ${isOpen ? 'all' : 'none'};
+
+    background: ${theme.colors.backgroundDark};
   `}
 `
 
