@@ -50,6 +50,8 @@ export default {
 
     border: 'rgba(255, 255, 255, 0.29)',
 
+    backgroundSecondary: 'rgba(19, 14, 23, 0.6)',
+
     neutral1: '#FFFFFF',
     neutral2: '#FAFAFA',
     neutral3: '#F5F5F5',

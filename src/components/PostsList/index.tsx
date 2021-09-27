@@ -9,6 +9,7 @@ import useDebounce from 'hooks/useDebounce'
 
 import * as S from './styles'
 import { getAllPosts } from 'services/posts'
+import { scrollTop } from 'utils/scroll'
 
 export type PostsListProps = {
   posts: PostItemProps[]
@@ -18,7 +19,8 @@ const LIMIT_POSTS_PER_PAGE = 10
 
 const PostsList = ({ posts }: PostsListProps) => {
   const [allPosts, setAllPosts] = useState(posts)
-  const [currentPage, setCurrentPage] = useState(2)
+  const [currentPage, setCurrentPage] = useState(1)
+  const [alreadyTyped, setAlreadyTyped] = useState(false)
 
   const [searchValue, setSearchValue] = useState('')
   const debouncedValue = useDebounce(searchValue, 600)
@@ -27,27 +29,13 @@ const PostsList = ({ posts }: PostsListProps) => {
     rootMargin: '120px'
   })
 
-  const populateNewPosts = async () => {
+  const populateNewPosts = async (page: number, value = '') => {
     try {
-      const newPosts = await getAllPosts(
-        currentPage,
-        LIMIT_POSTS_PER_PAGE,
-        debouncedValue
+      const newPosts = await getAllPosts(page, LIMIT_POSTS_PER_PAGE, value)
+
+      setAllPosts((prevPosts) =>
+        page === 1 ? newPosts : [...prevPosts, ...newPosts]
       )
-
-      setAllPosts((prevPosts) => [...prevPosts, ...newPosts])
-    } catch {
-      console.log('An error has occurred')
-    }
-  }
-
-  const populatePostsSearch = async (searchValue = '') => {
-    try {
-      const newPosts = await getAllPosts(1, LIMIT_POSTS_PER_PAGE, searchValue)
-
-      setAllPosts(newPosts)
-      setCurrentPage(0)
-      setCurrentPage(2)
     } catch {
       console.log('An error has occurred')
     }
@@ -55,20 +43,29 @@ const PostsList = ({ posts }: PostsListProps) => {
 
   useEffect(() => {
     if (debouncedValue) {
-      populatePostsSearch(debouncedValue)
+      setAlreadyTyped(true)
+      setCurrentPage(1)
+      populateNewPosts(1, debouncedValue)
+      scrollTop(300)
+    }
+
+    if (!debouncedValue && alreadyTyped) {
+      scrollTop(300)
+      setAlreadyTyped(false)
+      setCurrentPage(1)
+      populateNewPosts(1)
+    }
+  }, [debouncedValue, alreadyTyped])
+
+  useEffect(() => {
+    if (inView) {
+      setCurrentPage(currentPage + 1)
+
+      if (!debouncedValue) populateNewPosts(currentPage + 1)
+      if (debouncedValue) populateNewPosts(currentPage + 1, debouncedValue)
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [debouncedValue])
-
-  useEffect(() => {
-    if (currentPage) populateNewPosts()
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentPage])
-
-  useEffect(() => {
-    if (inView) setCurrentPage((prevPage) => prevPage + 1)
   }, [inView])
 
   return (

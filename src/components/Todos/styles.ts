@@ -6,7 +6,9 @@ export const Wrapper = styled.article`
     max-width: 42.5rem;
     border-radius: ${theme.border.radius};
     border: 1px solid ${theme.colors.border};
-    background: rgba(19, 14, 23, 0.6);
+    background: ${theme.colors.backgroundSecondary};
+    margin: 0 auto;
+    margin-bottom: 10rem;
 
     padding: ${theme.spacings.medium} ${theme.spacings.small};
   `};
