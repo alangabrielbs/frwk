@@ -49,6 +49,21 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
+          <link
+            href="/icons/framework-icon-150x150.png"
+            rel="icon"
+            sizes="32x32"
+          />
+          <link
+            href="/icons/framework-icon-300x300.png"
+            rel="icon"
+            sizes="192x192"
+          />
+          <link
+            href="/icons/framework-icon-300x300.png"
+            rel="apple-touch-icon-precomposed"
+          />
+
           <meta name="theme-color" content="#807CE8" />
         </Head>
         <body>
