@@ -9,6 +9,11 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/alangabrielbs/frwk.svg">
 
+  
+  <a href="https://frwk-storybook.alangabriel.dev/">
+    <img alt="GitHub last commit" src="https://img.shields.io/badge/Storybook-Online-brightgreen">
+  </a>
+  
   <a href="https://github.com/alangabrielbs/frwk/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alangabrielbs/frwk.svg">
   </a>
@@ -24,6 +29,8 @@
   <img alt="Acesse o site" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0uk97oebpieqlfc91g3i.png" />
 </a>
 
+[Clique aqui para navegar pelo Storybook e visualizar os componentes](https://frwk-storybook.alangabriel.dev/)
+
 ---
 
 ## Tecnologias utilizadas
@@ -34,8 +41,9 @@
 - [styled-media-query](https://github.com/morajabi/styled-media-query)
 - [Faker.js](https://github.com/marak/Faker.js/)
 - [VS Code](https://code.visualstudio.com/) with [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) and [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Storybook](https://storybook.js.org/)
 
-## Como rodar a aplicação :arrow_forward:
+## Como rodar a aplicação
 
 No terminal, clone o projeto:
 
@@ -51,7 +59,7 @@ yarn install
 
 Inicie o servidor:
 ```bash
-yarn start
+yarn dev
 ```
 
 É possivel acessar o projeto rodando na rota: http://localhost:3000
