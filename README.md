@@ -20,8 +20,8 @@
 
 ![Mockup site](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gk0sivhwbjrrixy38i6t.png)
 
-<a href="https://frwk.alangabriel.dev" target="_blank">
-  <img alt="Acesse o site" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ds66bxyp52a2wrldt0e0.png" />
+<a href="https://frwk.alangabriel.dev">
+  <img alt="Acesse o site" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0uk97oebpieqlfc91g3i.png" />
 </a>
 
 ---
