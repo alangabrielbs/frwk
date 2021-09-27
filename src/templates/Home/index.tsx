@@ -1,5 +1,5 @@
 import { Container } from 'components/Container'
-import Hero from 'components/Hero'
+import Hero, { HeroProps } from 'components/Hero'
 import NavBar from 'components/NavBar'
 import { PostItemProps } from 'components/PostItem'
 import PostsList from 'components/PostsList'
@@ -9,6 +9,7 @@ import * as S from './styles'
 
 export type HomeTemplateProps = {
   posts: PostItemProps[]
+  hero: HeroProps
 }
 
 const HomeTemplate = ({ posts }: HomeTemplateProps) => {
