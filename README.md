@@ -59,7 +59,7 @@ yarn install
 
 Inicie o servidor:
 ```bash
-yarn start
+yarn dev
 ```
 
 É possivel acessar o projeto rodando na rota: http://localhost:3000
