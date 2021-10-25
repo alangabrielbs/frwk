@@ -30,7 +30,12 @@ jest.mock('components/PostsList', () => {
 })
 
 const props = {
-  posts: mock
+  posts: mock,
+  hero: {
+    title: 'Thoughts, Notes & Tutorials',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra hendrerit placerat. Nunc dictum nunc fermentum leo blandit porta.'
+  }
 }
 
 describe('<Home />', () => {
