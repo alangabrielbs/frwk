@@ -1,16 +1,16 @@
-import { Container } from 'components/Container'
-import Hero, { HeroProps } from 'components/Hero'
-import NavBar from 'components/NavBar'
-import { PostItemProps } from 'components/PostItem'
-import PostsList from 'components/PostsList'
-import { NextSeo } from 'next-seo'
+import { Container } from "components/Container";
+import Hero, { HeroProps } from "components/Hero";
+import NavBar from "components/NavBar";
+import { PostItemProps } from "components/PostItem";
+import PostsList from "components/PostsList";
+import { NextSeo } from "next-seo";
 
-import * as S from './styles'
+import * as S from "./styles";
 
 export type HomeTemplateProps = {
-  posts: PostItemProps[]
-  hero: HeroProps
-}
+  posts: PostItemProps[];
+  hero: HeroProps;
+};
 
 const HomeTemplate = ({ posts }: HomeTemplateProps) => {
   return (
@@ -18,20 +18,17 @@ const HomeTemplate = ({ posts }: HomeTemplateProps) => {
       <NextSeo
         canonical="https://frwk.alangabriel.dev"
         openGraph={{
-          url: 'https://frwk.alangabriel.dev',
-          title: 'framework',
-          description:
-            'Com mais de 12 anos de história, somos especialistas em tecnologia e na transformação digital de grandes players do mercado. Temos em nossa essência o objetivo de construir um futuro impactante com a criação de soluções autênticas e inovadoras.',
+          url: "https://frwk.alangabriel.dev",
+          title: "frwk",
           images: [
             {
-              url:
-                'https://thumbnail-poc.vercel.app/api/thumbnail.png?title=framework!&width=1280&height=720',
+              url: "https://thumbnail-poc.vercel.app/api/thumbnail.png?title=frwk!&width=1280&height=720",
               width: 1280,
               height: 720,
-              alt: 'framework'
-            }
+              alt: "frwk",
+            },
           ],
-          site_name: 'framework'
+          site_name: "frwk",
         }}
       />
       <S.Wrapper>
@@ -47,7 +44,7 @@ const HomeTemplate = ({ posts }: HomeTemplateProps) => {
         </Container>
       </S.Wrapper>
     </>
-  )
-}
+  );
+};
 
-export default HomeTemplate
+export default HomeTemplate;

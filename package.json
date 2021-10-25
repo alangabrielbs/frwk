@@ -1,5 +1,5 @@
 {
-  "name": "framework-teste",
+  "name": "frwk",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,10 +20,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
-    ]
+    "src/**/*": ["yarn lint --fix", "yarn test --findRelatedTests --bail"]
   },
   "dependencies": {
     "axios": "^0.21.4",
