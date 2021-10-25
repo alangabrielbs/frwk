@@ -1,12 +1,12 @@
-import NavBar from "components/NavBar";
-import Post, { PostProps } from "components/Post";
-import { NextSeo } from "next-seo";
+import NavBar from 'components/NavBar'
+import Post, { PostProps } from 'components/Post'
+import { NextSeo } from 'next-seo'
 
-import * as S from "./styles";
+import * as S from './styles'
 
 export type PostTemplateProps = {
-  post: PostProps;
-};
+  post: PostProps
+}
 
 const PostTemplate = ({ post }: PostTemplateProps) => {
   return (
@@ -16,18 +16,18 @@ const PostTemplate = ({ post }: PostTemplateProps) => {
         description={post.body}
         canonical="https://frwk.alangabriel.dev"
         openGraph={{
-          url: "https://frwk.alangabriel.dev",
-          title: "frwk",
+          url: 'https://frwk.alangabriel.dev',
+          title: 'frwk',
           description: post.body,
           images: [
             {
               url: `https://thumbnail-poc.vercel.app/api/thumbnail.png?title=${post.title}&width=1280&height=720`,
               width: 1280,
               height: 720,
-              alt: "frwk",
-            },
+              alt: 'frwk'
+            }
           ],
-          site_name: "frwk",
+          site_name: 'frwk'
         }}
       />
       <S.Wrapper>
@@ -36,7 +36,7 @@ const PostTemplate = ({ post }: PostTemplateProps) => {
         <Post {...post} />
       </S.Wrapper>
     </>
-  );
-};
+  )
+}
 
-export default PostTemplate;
+export default PostTemplate
